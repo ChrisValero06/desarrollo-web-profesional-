@@ -1,0 +1,31 @@
+body {
+    background-color: #00FFFF; /* Azul aqua */
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.rating {
+    color: #555555;
+}
+
+.btn-warning {
+    background-color: #16fd01;
+    border: none;
+}
