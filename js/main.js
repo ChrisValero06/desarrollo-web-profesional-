@@ -29,7 +29,7 @@
         } 
     });
     
-    
+    // evento 1
    // Back to top button
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
@@ -43,7 +43,7 @@
         return false;
     });
 
-
+    // evento 2
     // Testimonial carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -111,7 +111,7 @@
         }
     });
 
-
+    // evento 3
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
@@ -130,7 +130,7 @@
     });
 
 
-
+    // evento 4
     // Product Quantity
     $('.quantity button').on('click', function () {
         var button = $(this);
@@ -146,10 +146,5 @@
         }
         button.parent().parent().find('input').val(newVal);
     });
-
-    //Datatable 
-
-    
-
 })(jQuery);
 
