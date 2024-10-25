@@ -1,0 +1,103 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f8e7; /* Fondo claro */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Contenedor de login */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    border: 2px solid #aad576; /* Borde verde suave */
+}
+
+/* Título */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #75b846; /* Verde primario */
+}
+
+/* Grupo de inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 0.9em;
+    color: #75b846; /* Verde primario */
+}
+
+/* Estilos de los inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d9eec7; /* Verde pálido */
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    transition: border 0.3s ease;
+    color: #333;
+    background-color: #fafafa;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #aad576; /* Verde más intenso en focus */
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #e63946;
+    font-size: 0.85em;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Botón de inicio de sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f9a825; /* Amarillo brillante */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ffcc00; /* Amarillo más claro al hacer hover */
+}
+
+/* Sombra y animación al hacer hover */
+.login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
