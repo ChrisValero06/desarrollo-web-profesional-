@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Cuenta</title>
+    <link rel="stylesheet" href="css\recover.css">
+</head>
+<body>
+    <div class="recover-container">
+        <h2>Recuperar Cuenta</h2>
+        <form id="recoverForm">
+            <div class="input-group">
+                <label for="username">Usuario o Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Nueva Contraseña</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <small class="error-message" id="passwordError"></small>
+            </div>
+            <button type="submit" id="recoverButton">Recuperar</button>
+        </form>
+    </div>
+    <script src="js/recover.js"></script>
+</body>
+</html>
+
